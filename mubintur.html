@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>MT| Катталуу</title>
+</head>
+<body>
+    <div class="body">
+    <center>
+    <div class="page">
+        <form action="https://sheetdb.io/api/v1/mhl6njdtprxfx" method="post"  id="sheetdb-form">
+    <center>
+        <h2 class="title">Катталуу</h2>
+        <p class="pp-reg">Урматтуу мекендештер, эгерде сиздер Умра же Хаж сапарына барууну кааласаңыздар, ушул жерге катталыңыз. Ар бир адам бул  жерге өз-өзүнчө катталуусу зарыл!</p>
+            <input placeholder="аты-жөнү" name="data[name]" class="input-but" type="text" value="" required>
+            <input placeholder="Тел:" name="data[tel:]" class="input-but" type="number" value="" pattern="[`+996`,`-7`,`0`]{1}[0-9]{3}[0-9]{3}[0-9]{3}" required><br>
+            <div class="wrapper">
+                <input type="radio" name="data[male or female]" id="option-1" value="Эркек">
+                <input type="radio" name="data[male or female]" id="option-2" value="Аял">
+                <label for="option-1" class="option option-1">
+                  <div class="dot"></div>
+                  <span>Эркек</span>
+                </label>
+                <label for="option-2" class="option option-2">
+                  <div class="dot"></div>
+                  <span>Аял</span>
+                </label>
+              </div>
+              <center>
+                <h4>Жашы</h4>
+              </center>
+              <div class="container">
+                <span id="decrement" class="button" onclick="stepper(this)">-</span>
+                <input type="number" min="6" max="100" step="1" name="data[age:]" value="20" id="my-input">
+                <span id="increment" class="button" onclick="stepper(this)">+</span>
+            </div>
+
+
+            <input class="input-but but" value="жөнөтүү" type="submit">
+</center>
+        </form>
+    </div>
+</center></div>
+
+
+
+<script>
+  var form = document.getElementById('sheetdb-form');
+form.addEventListener("submit", e => {
+e.preventDefault();
+fetch(form.action, {
+    method : "POST",
+    body: new FormData(document.getElementById("sheetdb-form")),
+}).then(
+    response => response.json()
+).then((html) => {
+  // you can put any JS code here
+  window.open('index.html','_top');
+
+});
+});
+
+
+const myInput = document.getElementById("my-input");
+function stepper(btn){
+    let id = btn.getAttribute("id");
+    let min = myInput.getAttribute("min");
+    let max = myInput.getAttribute("max");
+    let step = myInput.getAttribute("step");
+    let val = myInput.getAttribute("value");
+    let calcStep = (id == "increment") ? (step*1) : (step * -1);
+    let newValue = parseInt(val) + calcStep;
+
+    if(newValue >= min && newValue <= max){
+        myInput.setAttribute("value", newValue);
+    }
+}
+</script>
+</body>
+</html>
