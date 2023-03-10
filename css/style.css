@@ -1,0 +1,853 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+    *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Signika Negative', sans-serif;
+    }
+    nav{
+        background:#000;
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        z-index: 5;
+    }
+
+    .nnn{
+        font-size: 97px;
+        padding-top: 278px;
+        padding-left: 92px;
+        color: #Ffd700;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .header__burger-btn{
+        display: none;
+        position: relative;
+        width: 60px;
+        height: 60px;  
+        border: none;
+        background-color: #000;
+        z-index: 2;
+        left: 25px;
+        top: 10px;
+    }
+
+    .header__burger-btn span{
+        position: absolute;
+        width: 45px;
+        height: 3px;
+        background-color: #Ffd700;
+        left: 5px;
+        transition: transform .5s, opacity .5s, background-color .5s;
+    }
+
+    .header__burger-btn span:nth-child(1){
+        transform: translateY(-15px);
+    }
+
+    .header__burger-btn span:nth-child(3){
+        transform: translateY(15px);
+    }
+
+    nav.open .header__burger-btn span:nth-child(2){
+        opacity: 0;
+    }
+    nav.open .header__burger-btn span:nth-child(1){
+        transform: translateY(0) rotate(45deg);
+    }
+
+    nav.open .header__burger-btn span:nth-child(3){
+        transform: translateY(0) rotate(-45deg);
+    }
+
+
+
+
+    .logo span{
+        height: 80px;
+        font-size: 30px;
+        color: #Ffd700;
+        position: relative;
+        top: -30px;
+        left: -10px;
+    }
+
+    .logo{
+    margin-left: 50px;
+    }
+    .logo img{
+        width: 80px;
+        height: 80px;
+    }
+    nav ul{
+        float: right;
+        margin-right: 40px;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin:  0 5px;
+    }
+    nav ul li a{
+        color: #Ffd700;
+        font-size: 15px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    a.active,a:hover{
+        background: #Ffd700;
+        transition: .5s;
+        color: #000;
+    }
+
+    .logo span{
+        height: 80px;
+        font-size: 30px;
+        color: #Ffd700;
+        position: relative;
+        top: -30px;
+        left: -10px;
+    }
+    .logo img{
+        width: 80px;
+        height: 80px;
+    }
+    nav ul{
+        float: right;
+        margin-right: 80px;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin:  0 5px;
+    }
+    nav ul li a{
+        color: #Ffd700;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    a.active,a:hover{
+        background: #Ffd700;
+        transition: .5s;
+        color: #000;
+    }
+    .kkk{
+        height: 25px;
+    }
+
+    .nnn{
+        font-size: 97px;
+        padding-top: 148px;
+        padding-left: 42px;
+        color: #fff;
+        font-weight: 900;
+    }
+
+    @media(max-width:700px){
+        .nnn{
+            font-size: 77px;
+            padding-top: 148px;
+            padding-left: 42px;
+            color: #fff;
+            font-weight: 900;
+        }
+    }
+
+
+    @media (max-width:1125px){
+        .logo{
+            margin-left: 20px;
+        }
+        nav ul{
+            float: right;
+            margin-right: 30px;
+        }
+        
+
+    }
+
+    @media (max-width:1000px){
+        .logo{
+            float: right;
+            margin-right: 40px;
+        }
+
+        .header__burger-btn{
+            display: block;
+        }
+        nav ul{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #000;
+            padding: 75px 20px 10px 20px;
+            width: 350px;
+            left: -350px;
+            transition: transform .6s;
+            opacity: .9;
+        }
+        nav ul li{
+            display: block;
+        }
+        nav ul li a{
+            font-size: 22px;
+        }
+
+        nav.open ul{
+            transform: translateX(100%);    
+        }
+
+    }
+
+    /*.arrow {
+        margin: 0 auto;
+        height: 50px;
+        width: 85%; 
+        position: relative;
+        top: -39px;
+        z-index: -1;
+        }
+        .arrow:before, 
+        .arrow:after {
+        content: "";
+        height: 100%; 
+        width: 50%;
+        position: absolute; 
+        top: 0;
+        background: #000;
+        opacity: 1;
+        }
+        .arrow:before {
+        left: 0;
+        transform: skew(0deg, 5deg);
+        }
+        .arrow:after {
+        right: 0;
+        transform: skew(0deg, -5deg);
+    }*/
+
+    @media (max-width:1050px){
+        .block1{
+            margin: 10px;
+        }
+
+    }
+
+
+    .home{
+        height: 100%;
+    }
+    .y{
+        padding: 0;
+        margin: 0;
+    }
+    .calc{
+        width: 100%;
+        height: 100%;
+        background: url('https://levelvan.ru/upload/media/-1001460752197-2149.jpg');
+        background-size: cover;
+        margin: 0px auto;
+        animation: slide 20s infinite;
+        
+    }
+    @keyframes slide{
+        25%{
+            background: url('https://traveltimes.ru/wp-content/uploads/2021/11/8329082346434562.jpg');
+        }
+        50%{
+            background: url('https://avatars.dzeninfra.ru/get-zen_doc/1132604/pub_5defc7fbd4f07a00ad68c758_5defcacf05fd9800ae1b53d0/scale_1200');
+            background-size: cover;
+        }   
+        75%{
+            background: url('https://image.winudf.com/v2/image1/Y29tLmdvb2RidWlsZGx3cC5sd3BtZWNjYV9zY3JlZW5fNV8xNTUwMzM5ODQ4XzA1OQ/screen-5.jpg?fakeurl=1&type=.jpg');
+            background-size: cover;
+        }
+        100%{
+            background: url('https://islamnews.ru/wp-content/uploads/2017/01/kjkbffgfcgdcfdg.jpg');
+            background-size: cover;
+        }
+    }
+    .q1{
+        font-size: 60px;
+        font-weight: 800;
+        color: white;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .title__1{
+        background: #000;
+        color: #Ffd700;
+        font-weight: bold;
+        height: 100px;
+        font-size: 28px;
+        border-radius: 10px 10px 0px 0px ;
+        text-align: center;
+        padding:15px 10px 10px 10px ;
+        font-family: 'Anton', sans-serif;
+    }
+    .title__2{
+        background: #000;
+        color: #Ffd700;
+        font-weight: bold;
+        height: 100px;
+        font-size: 28px;
+        border-radius: 10px 10px 0px 0px ;
+        text-align: center;
+        padding:30px 10px 10px 10px ;
+        
+    }
+
+    .ereje{
+        border-radius: 11px;
+        width: 495px;
+        height: 500px;
+        background-color: white;
+    }
+
+    .home ul li{
+        margin-top: -25px;
+        font-size: 24px;
+
+    }
+
+    .home ul{
+        margin: 10px;
+    }
+
+    .home ul li::before{
+        content:"✖️";
+        color: #000;
+        position: relative;
+        top: 53px;
+        left: -9px;
+    }
+
+    .n{
+        margin-top: 23px;
+        margin-left: 23px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .erejel{
+        border-radius: 11px;
+        width: 495px;
+        height: 500px;
+        background-color: white;
+    }
+    .blocks{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .block__1{
+        padding-top: 37px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+    }
+    .block__2{
+        padding-top: 37px;
+        padding-bottom: 10px;
+    }
+
+    @media (max-width:580px){
+        .blocks .title__1{
+            font-size: 23px;
+        }
+        .blocks .title__2{
+            font-size: 23px;
+        }
+        .ereje{
+            width: 360px;
+        }
+        .erejel{
+            width: 360px;
+        }
+        .blocks ul li{
+            font-size: 18px;
+        }
+        .home ul li::before{
+            content:"✖️";
+            color: #000;
+            position: relative;
+            top: 45px;
+            left: -4px;
+        }
+        .ereje{
+            height: 100%;
+        }
+        .text{
+            font-size: 20px;
+        }
+
+        
+    }
+
+    .text{
+        margin: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 24px;
+    }
+    .kkk1{
+        height: 25px;
+        overflow: hidden;
+    }
+    .block_flex{
+        display: flex;
+        justify-content: center;
+        padding-top: 8px;
+    }
+    .footer_footer{
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 34px;
+        background-color: #000;
+    }
+    .h1{
+        font-size: 23px;
+        font-weight: 700;
+        color: #Ffd700;
+    }
+    .p_footer{
+        padding-top: 30px;
+        font-size: 23px;
+        font-weight: 700;
+        color: #Ffd700;
+    }
+    .footer_image_i{
+        padding-top: 30px;
+        font-size: 32px;
+        font-weight: 700;
+        color: #Ffd700;
+        text-align: center;
+    }
+    .footer_345{
+        width: 330px;
+        height: 220px;
+        padding-top: -5px;
+    }
+    .socials{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+    }
+    .socials li{
+        margin: 0 10px 
+    }
+    .socials a{
+        text-decoration:none;
+        color: #Ffd700;
+    }
+    .footer_telegram{
+        width: 45px;
+        height: 36px;
+    }
+    .footer_instagram{
+        width: 45px;
+        height: 36px;
+    }
+    .footer_youtube{
+        width: 45px;
+        height: 36px;
+    }
+
+    @media (max-width:900px){
+        .footer_footer{
+            height: 100%;
+            padding-top: 34px;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;    
+            justify-content: center;
+            align-items: center;
+        }
+        .footer .p_footer{
+            text-align: center;
+        }
+
+        
+        
+    }
+
+
+    .bashku{
+        padding: 0;
+        margin: 0;
+    }
+    .calc1{
+        width: 100%;
+        height: 580px;
+        background: url('https://upload.wikimedia.org/wikipedia/commons/e/e0/Madina-.jpg');
+        background-size: cover;
+        margin: 0px auto;
+        animation-delay: slide 20s infinite;
+        
+    }
+
+    @keyframes slide{
+        25%{
+            background: url('https://upload.wikimedia.org/wikipedia/commons/e/e0/Madina-.jpg');
+        }
+        50%{
+            background: url('https://i.pinimg.com/originals/a6/d0/65/a6d06588de844fa64fc18353af66900d.jpg');
+            background-size: cover;
+        }   
+        75%{
+            background: url('https://i.pinimg.com/originals/0b/e9/a0/0be9a04891564fa9080da61037c51a50.jpg');
+            background-size: cover;
+        }
+        100%{
+            background: url('https://www.andrewmarcus.ru/img/travel/medina/top.jpg?2');
+            background-size: cover;
+        }
+    }
+    .mubin_tur2{
+        color: #Ffd700;
+        font-size: 120px;
+        font-weight: 900;
+        padding: 170px 0px 0px 160px;
+    }
+    .kaaba{
+        width: 400px;
+        height: 280px;
+        padding-top: 60px;
+        padding-left: 120px;
+        border-radius: 15px;
+    }
+    .paydaluu{
+        
+            padding: 0;
+            margin: 0;
+            background-color:#000;
+        width: 100%;
+        height: 100%;
+    }
+    .halk{
+        font-size: 56px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 17px;
+        color: #Ffd700;
+    }
+    .block{
+        padding-top: 19px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .block1{
+        border: 5px solid #Ffd700;
+        width: 300px;
+        height: 200px;
+        background-color: #000;
+        border-radius: 15px;
+        margin: 10px;
+    }
+    .block_image{
+        width: 50px;
+        height: 50px;
+        padding: 9px 0px 0px 8px;
+        border-radius: 5px;
+    }
+    .block_text{
+        padding: 19px;
+        color: #Ffd700;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .paydaluu_tyshunuk{
+        background:url('https://phonoteka.org/uploads/posts/2021-04/1619735687_29-phonoteka_org-p-chernii-fon-s-rombami-32.jpg');
+        width: 100%;
+        height: 100%;
+    }
+    .paydaluu_text{
+        display: flex;
+        justify-content: space-around;
+    }
+    .paydaluu_text_1{
+        width: 510px;
+        height: 100%;
+        padding-left: 20px;
+        padding-top: 20px;
+        color: #Ffd700;
+        font-size: 22px;
+        font-weight: 300;
+        font-family: 'Times New Roman', Times, serif;
+        padding-bottom: 20px;
+    }
+
+    /*/////////////////////////////////////////////////*/
+    .paydaluu_tyshunuk_img_1{
+        width: 45%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .paydaluu_tyshunuk_img{
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    @media(max-width:700px){
+        .paydaluu_tyshunuk_img{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            height: 100%;
+        }
+        .paydaluu_tyshunuk_img_1{
+            width: 80%;
+            height: auto;
+            padding: 20px;
+        }
+        .paydaluu_text_1{
+            width: 100%;
+            height: 100%;
+            padding-left: 20px;
+            padding-top: 20px;
+            color: #Ffd700;
+            font-size: 18px;
+            font-weight: 300;
+            padding-bottom: 20px;
+            font-family: 'Signika Negative', sans-serif;
+        }
+
+        .paydaluu_text{
+            display: flex;
+        flex-direction: column;
+        }
+    }
+    /*/////////////////////////////////////////////////*/
+
+
+    .paydaluu_odejda{
+        background:url('https://funart.pro/uploads/posts/2022-08/1659639262_72-funart-pro-p-chernii-fon-dlya-storis-krasivo-75.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .paydaluu_odejda_text{
+        display: flex;
+        justify-content: space-around;
+    }
+    .paydaluu_odejda_text1{
+        width: 510px;
+        height: 100%;
+        padding-left: 20px;
+        padding-top: 20px;
+        color: #Ffd700;
+        font-size: 22px;
+        font-weight: 300;
+        font-family: 'Signika Negative', sans-serif;
+            padding-bottom: 20px;
+    }
+
+    /*/////////////////////////////////////////////////*/
+    .paydaluu_odejda_img1{
+        width: 45%;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .paydaluu_odejda_img{
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    @media(max-width:700px){
+        .paydaluu_odejda_img{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            height: 100%;
+        }
+        .paydaluu_odejda_img1{
+            width: 80%;
+            height: auto;
+            padding: 20px;
+        }
+        .paydaluu_odejda_text1{
+            width: 100%;
+            height: 100%;
+            padding-left: 20px;
+            padding-top: 20px;
+            color: #Ffd700;
+            font-size: 18px;
+            font-weight: 300;
+            padding-bottom: 20px;
+            font-family: 'Signika Negative', sans-serif;
+        }
+
+        .paydaluu_odejda_text{
+            display: flex;
+        flex-direction: column;
+        }
+    }
+    /*/////////////////////////////////////////////////*/
+
+
+
+
+
+
+    .paydaluu_tavaf{
+        background:url('https://phonoteka.org/uploads/posts/2022-02/1645386095_54-phonoteka-org-p-stilnii-fon-dlya-vizitki-54.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .paydaluu_tavaf_text{
+        display: flex;
+        justify-content: space-around;
+    }
+    .paydaluu_tavaf_text1{
+        width: 510px;
+        height: 100%;
+        padding-left: 20px;
+        padding-top: 20px;
+        color: #Ffd700;
+        font-size: 22px;
+        font-weight: 300;
+        font-family: 'Signika Negative', sans-serif;
+        padding-bottom: 20px;
+    }
+
+
+    /*/////////////////////////////////////////////////*/
+    .paydaluu_tavaf_img1{
+        width: 70%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .paydaluu_tavaf_img{
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    @media(max-width:700px){
+        .paydaluu_tavaf_img{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            height: 100%;
+        }
+        .paydaluu_tavaf_img1{
+            width: 90%;
+            height: auto;
+            padding: 20px;
+        }
+        .paydaluu_tavaf_text1{
+            width: 100%;
+            height: 100%;
+            padding-left: 20px;
+            padding-top: 20px;
+            color: #Ffd700;
+            font-size: 18px;
+            font-weight: 300;
+            padding-bottom: 20px;
+            font-family: 'Signika Negative', sans-serif;
+        }
+
+        .paydaluu_tavaf_text{
+            display: flex;
+        flex-direction: column;
+        }
+    }
+    /*/////////////////////////////////////////////////*/
+
+
+
+
+
+
+    .sena .n{
+        font-size: 24px;
+    }
+
+    .sena{
+        background: url('https://cdn.medcom.id/dynamic/photos/2017/09/02/30435/000_S20UJ.jpg?w=1111');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .baasu_h{
+        display: flex;
+        justify-content: center;
+        padding: 22px;
+    }
+    .baasu_h1{
+        color:#Ffd700;
+        font-size: 39px;
+        font-weight: 800;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .baasu_p{
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .baasu_p1{
+        color:#Ffd700;
+        font-size: 34px;
+        font-weight: 800;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+
+    @media (max-width:580px){
+        .sena .blocks .title__1{
+            font-size: 23px;
+        }
+        .blocks .title__2{
+            font-size: 23px;
+        }
+        .ereje{
+            width: 360px;
+        }
+        .erejel{
+            width: 360px;
+        }
+        .sena .blocks ul li .n{
+            font-size: 18px;
+        }
+        .home ul li::before{
+            content:"✖️";
+            color: #000;
+            position: relative;
+            top: 45px;
+            left: -4px;
+        }
+        .ereje{
+            height: 100%;
+        }
+        .sena .text{
+            font-size: 22px;
+        }
+
+        
+    }
